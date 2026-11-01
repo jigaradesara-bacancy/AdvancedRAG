@@ -1,0 +1,15 @@
+{
+  "_readme": "Fill expectedAnswer, expectedFacts and expectedPages after inspecting the source PDFs. Cases with no expectations are reported as 'unscored' rather than passed. documentMatch is a case-insensitive substring of the stored document name and exists only to scope the evaluation run.",
+  "cases": [
+    { "id": "gpo-1", "useCase": 1, "documentMatch": "gpo", "question": "How many depository libraries did GPO staff visit in FY 2018?", "expectedAnswer": null, "expectedFacts": [], "expectedPages": [], "shouldRefuse": false },
+    { "id": "gpo-2", "useCase": 1, "documentMatch": "gpo", "question": "What new digital system replaced FDsys, and when was it fully deployed?", "expectedAnswer": null, "expectedFacts": [], "expectedPages": [], "shouldRefuse": false },
+    { "id": "gpo-3", "useCase": 1, "documentMatch": "gpo", "question": "How much did GPO procure in printing and information products in FY 2018 on behalf of federal agencies?", "expectedAnswer": null, "expectedFacts": [], "expectedPages": [], "shouldRefuse": false },
+    { "id": "gep-1", "useCase": 2, "documentMatch": "global economic", "question": "What is the growth outlook for South Asia in this report?", "expectedAnswer": null, "expectedFacts": [], "expectedPages": [], "shouldRefuse": false, "isolation": { "region": "South Asia" } },
+    { "id": "gep-2", "useCase": 2, "documentMatch": "global economic", "question": "What does Chapter 3 say about sovereign debt in developing economies?", "expectedAnswer": null, "expectedFacts": [], "expectedPages": [], "shouldRefuse": false, "isolation": { "chapterNumber": 3 } },
+    { "id": "gep-3", "useCase": 2, "documentMatch": "global economic", "question": "According to the executive summary, what are the main risks to the global outlook?", "expectedAnswer": null, "expectedFacts": [], "expectedPages": [], "shouldRefuse": false },
+    { "id": "imac-1", "useCase": 3, "documentMatch": "imac", "question": "How much less energy does iMac use compared to the ENERGY STAR requirement?", "expectedAnswer": null, "expectedFacts": [], "expectedPages": [], "shouldRefuse": false, "expectedElements": [] },
+    { "id": "imac-2", "useCase": 3, "documentMatch": "imac", "question": "What is the total carbon footprint of the iMac, and how much of that comes from product use versus manufacturing?", "expectedAnswer": null, "expectedFacts": [], "expectedPages": [], "shouldRefuse": false, "expectedElements": [] },
+    { "id": "imac-3", "useCase": 3, "documentMatch": "imac", "question": "What material is the iMac stand made from, and what percentage of it is recycled?", "expectedAnswer": null, "expectedFacts": [], "expectedPages": [], "shouldRefuse": false, "expectedElements": [] },
+    { "id": "neg-1", "useCase": 0, "documentMatch": "", "question": "What is the home address of the document's lead author?", "expectedAnswer": null, "expectedFacts": [], "expectedPages": [], "shouldRefuse": true }
+  ]
+}

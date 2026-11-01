@@ -1,0 +1,19 @@
+{
+  "name": "advanced-rag",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Unified multi-document RAG: plain, structured and visual PDFs",
+  "workspaces": ["server", "client"],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "concurrently -n server,client \"npm run dev -w server\" \"npm run dev -w client\"",
+    "start": "npm run start -w server",
+    "build": "npm run build -w client",
+    "test": "npm run test -w server",
+    "db:up": "docker compose up -d mongodb",
+    "db:down": "docker compose down",
+    "evaluate": "node server/src/scripts/evaluate.js"
+  },
+  "devDependencies": { "concurrently": "^10.0.6" }
+}

@@ -1,0 +1,8 @@
+node_modules
+dist
+server/storage
+data/documents/*.pdf
+*.local
+.env
+.env.*
+!.env.example
